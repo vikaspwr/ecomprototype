@@ -33,8 +33,8 @@
     
 # Notes
     In all below APIs the headers in required in all the APIs except login api.
-    
-#TODO
+
+# TODO
     1. Logging
     2. CONFIG
     3. Optimization
@@ -43,7 +43,7 @@
     6. Auto Setup.
     7. Edit Product
     
-#API
+# API
     Below are all the APIs mentioned.
    
     The Category APIs does not have any dependency.
@@ -51,7 +51,7 @@
     The Supplier APIs does not have any dependency.
     The product APIs has dependency on the Category, Sub Category and Supplier APIs. 
 
-#Login API
+# Login API
 
     URL: 
         /api/login
@@ -85,7 +85,7 @@
 
 # CATEGORY API
 
-###1. ADD CATEGORY:
+### 1. ADD CATEGORY:
 	URL: 
 	    /api/category
 	
@@ -124,7 +124,7 @@
 			MESSAGE	: {'error': 'Category name "{0}" is already exist.'}
 			CODE	: 400 BAD_REQUEST
 
-###2. GET CATEGORY:
+### 2. GET CATEGORY:
 	
 	URL: 
 	    /api/category
@@ -165,7 +165,7 @@
 		Runtime errors if any.
 
 
-###3. PUT CATEGORY:
+### 3. PUT CATEGORY:
 
 	URL: 
 	    /api/category
@@ -216,7 +216,7 @@
 
 # SUB CATEGORY
 
-###1. ADD SUB CATEGORY:
+### 1. ADD SUB CATEGORY:
 	URL: 
 	    /api/subcategory
 	
@@ -257,7 +257,7 @@
 			CODE	: 400 BAD_REQUEST
 
 			
-###2. GET SUB CATEGORY:
+### 2. GET SUB CATEGORY:
 	URL: 
 	    /api/subcategory
 	
@@ -272,8 +272,8 @@
 
 # Supplier
 
-###1. ADD Supplier:
-URL: 
+### 1. ADD Supplier:
+	URL: 
 	    /api/subcategory
 	
 	METHOD: 
@@ -333,7 +333,7 @@ URL:
             NOTES    : X is refer to the value which is sent to server. 
 
 
-###1. GET Supplier:
+### 1. GET Supplier:
     
     URL: /api/supplier
 	
@@ -387,8 +387,8 @@ URL:
 
 # Product
 
-###1. ADD Product:
-URL: 
+### 1. ADD Product:
+	URL: 
 	    /api/product
 	
 	METHOD: 
@@ -440,7 +440,7 @@ URL:
 			CODE	: 400 BAD_REQUEST 
 
 
-###2. GET Product:
+### 2. GET Product:
     
     URL: /api/product
 	
@@ -519,7 +519,7 @@ URL:
         ]
 
 
-###3. DELETE Product:
+### 3. DELETE Product:
     Delete product APIs will not delete the record from the database.
     Which is not good practice. so when the delete APIs are called it
     actually disabled the product. it set the flag is_active to False.
